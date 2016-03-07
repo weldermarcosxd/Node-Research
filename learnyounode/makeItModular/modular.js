@@ -1,7 +1,11 @@
-var fileList = require('./fileList');
+var fileList = require('./fileList.js');
 
-var res = fileList(process.argv[2], process.argv[3])
-
-res.forEach(function(file){
-  console.log(file);
+var res = fileList(process.argv[2], process.argv[3], function(err, data){
+  if (!err) {
+    data.forEach(function(file){
+      console.log(file);
+    })
+  }else{
+    console.log('An Error Occourred');
+  }
 })
