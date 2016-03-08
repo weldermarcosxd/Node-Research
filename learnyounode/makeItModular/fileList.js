@@ -3,8 +3,8 @@ var path = require('path');
 
 module.exports = function(pat, ext, callback) {
     fs.readdir(pat, function(err, files){
-      if(!files){
-        return callback('error')
+      if(err){
+        return callback(err)
       }else {
         var results = []
         files.forEach(function(file){
@@ -12,7 +12,7 @@ module.exports = function(pat, ext, callback) {
             results.push(file)
           }
         })
-        return callback(null, results)
+        callback(null, results)
       }
     });
 }

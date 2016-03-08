@@ -6,6 +6,6 @@ var res = fileList(process.argv[2], process.argv[3], function(err, data){
       console.log(file);
     })
   }else{
-    console.log('An Error Occourred');
+    console.error('An Error Occourred', err);
   }
 })
