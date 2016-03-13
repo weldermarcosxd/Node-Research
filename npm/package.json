@@ -1,0 +1,26 @@
+{
+  "name": "amaterasu",
+  "version": "0.0.7",
+  "description": "justsdadas a teswewet",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weldermarcosxd/Node-Research.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "umemaro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weldermarcosxd/Node-Research/issues"
+  },
+  "homepage": "https://github.com/weldermarcosxd/Node-Research#readme",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  },
+  "devDependencies": {}
+}
