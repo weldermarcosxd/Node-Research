@@ -7,4 +7,4 @@ var stream = through2(function(buff, enc, next){
   done()
 })
 
-process.stdin.pipe(stream).pipe(process.stdout)
+process.stdin.pipe(stream).pipe(process.stdout)  
